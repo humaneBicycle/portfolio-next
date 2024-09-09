@@ -8,7 +8,7 @@ export default function Header() {
       <div className="flex w-full mt-12 justify-between">
         <div className="">
           <Link href="/">
-            <b>Abhay's</b> Portfolio
+            <b>Abhay&apos;s</b> Portfolio
           </Link>
         </div>
         <div>

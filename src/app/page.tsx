@@ -12,7 +12,7 @@ export default function About({ children }: { children: React.ReactNode }) {
           <div className="flex justify-between">
             <div className="flex-1 text-lg pr-4">
               <b>
-                Hi, I &apos;m Abhay <br></br>I am a Computer Science Engineer and
+                Hi, I&apos;m Abhay <br></br>I am a Computer Science Engineer and
                 a Full stack developer.
               </b>
               <p className="my-8 text-[#7F888F]">Summary</p>
