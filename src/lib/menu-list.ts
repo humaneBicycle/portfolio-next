@@ -65,13 +65,6 @@ export function getMenuList(pathname: string): Group[] {
           icon: Rss,
           submenus: [],
         },
-        {
-          href: "/contact",
-          label: "contact.tsx",
-          active: pathname.includes("/contact"),
-          icon: Phone,
-          submenus: [],
-        },
       ],
     },
   ];

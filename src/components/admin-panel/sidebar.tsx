@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PanelsTopLeft } from "lucide-react";
+import { Contact, PanelsTopLeft } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { useStore } from "@/hooks/use-store";
@@ -7,11 +7,14 @@ import { Button } from "@/components/ui/button";
 import { Menu } from "@/components/admin-panel/menu";
 import { useSidebarToggle } from "@/hooks/use-sidebar-toggle";
 import { SidebarToggle } from "@/components/admin-panel/sidebar-toggle";
+import { Mail } from "lucide-react";
+import { Phone } from "lucide-react";
+import { House } from "lucide-react";
 
 export function Sidebar() {
   const sidebar = useStore(useSidebarToggle, (state) => state);
-  
-  if(!sidebar) return null;
+
+  if (!sidebar) return null;
 
   return (
     <aside
@@ -38,12 +41,110 @@ export function Sidebar() {
                   ? "-translate-x-96 opacity-0 hidden"
                   : "translate-x-0 opacity-100"
               )}
-            >Sidebar.tsx</h1>
+            >
+              Sidebar.tsx
+            </h1>
           </>
         </Button>
         <Menu isOpen={sidebar?.isOpen} />
-        
-        
+        <Button
+          className={cn(
+            "transition-transform ease-in-out duration-300 mb-1 mt-10",
+            sidebar?.isOpen === false ? "translate-x-1" : "translate-x-0"
+          )}
+          variant="link"
+          asChild
+        >
+          <>
+            <h1
+              className={cn(
+                "font-bold text-lg whitespace-nowrap mt-8 transition-[transform,opacity,display] ease-in-out duration-300",
+                sidebar?.isOpen === false
+                  ? "-translate-x-96 opacity-0 hidden"
+                  : "translate-x-0 opacity-100"
+              )}
+            >
+              Contact.tsx
+            </h1>
+            <ul className="flex flex-col min-h-[50vh] items-start space-y-1 px-2 mt-8">
+              <li className={cn("w-full")}>
+                <Button
+                  variant={"ghost"}
+                  className="w-full justify-start h-10 mb-1"
+                  asChild
+                >
+                  <Link href={"mailto:abhayasood99@gmail.com"}>
+                    <span
+                      className={cn(sidebar?.isOpen === false ? "" : "mr-4")}
+                    >
+                      <Mail size={18} />
+                    </span>
+                    <p
+                      className={cn(
+                        "max-w-[200px] truncate",
+                        sidebar?.isOpen === false
+                          ? "-translate-x-96 opacity-0"
+                          : "translate-x-0 opacity-100"
+                      )}
+                    >
+                      abhayasood99@gmail.com
+                    </p>
+                  </Link>
+                </Button>
+              </li>
+              <li className="w-full">
+                <Button
+                  variant={"ghost"}
+                  className="w-full justify-start h-10 mb-1"
+                  asChild
+                >
+                  <Link href={"tel:+91 98055 04162"}>
+                    <span
+                      className={cn(sidebar?.isOpen === false ? "" : "mr-4")}
+                    >
+                      <Phone size={18} />
+                    </span>
+                    <p
+                      className={cn(
+                        "max-w-[200px] truncate",
+                        sidebar?.isOpen === false
+                          ? "-translate-x-96 opacity-0"
+                          : "translate-x-0 opacity-100"
+                      )}
+                    >
+                      +91 98055 04162
+                    </p>
+                  </Link>
+                </Button>
+              </li>
+              <li className="w-full">
+                <Button
+                  variant={"ghost"}
+                  className="w-full justify-start h-10 mb-1"
+                  asChild
+                >
+                  <Link href={""}>
+                    <span
+                      className={cn(sidebar?.isOpen === false ? "" : "mr-4")}
+                    >
+                      <House size={18} />
+                    </span>
+                    <p
+                      className={cn(
+                        "max-w-[200px] truncate",
+                        sidebar?.isOpen === false
+                          ? "-translate-x-96 opacity-0"
+                          : "translate-x-0 opacity-100"
+                      )}
+                    >
+                      NITH Campus, Hamirpur
+                    </p>
+                  </Link>
+                </Button>
+              </li>
+            </ul>
+          </>
+        </Button>
       </div>
     </aside>
   );
