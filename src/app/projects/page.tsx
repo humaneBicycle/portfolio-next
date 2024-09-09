@@ -3,7 +3,7 @@ import { ContentLayout } from "@/components/admin-panel/content-layout";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 
-export default function Projects({ children }: { children: React.ReactNode }) {
+export default function Projects() {
   return (
     <>
     </>

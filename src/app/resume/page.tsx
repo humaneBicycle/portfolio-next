@@ -2,7 +2,7 @@ import AdminPanelLayout from "@/components/admin-panel/admin-panel-layout";
 import Header from "@/components/header";
 import { ScrollArea } from "@radix-ui/react-scroll-area";
 
-export default function Resume({ children }: { children: React.ReactNode }) {
+export default function Resume() {
   return (
     <ScrollArea className="flex justify-center w-full h-[150vh]">
       <div className="dark w-[80%] h-full flex flex-col items-center">

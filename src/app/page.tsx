@@ -3,7 +3,7 @@ import Header from "@/components/header";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
 
-export default function About({ children }: { children: React.ReactNode }) {
+export default function About() {
   return (
     <>
       <div className="w-full items-center flex flex-col">

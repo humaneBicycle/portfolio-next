@@ -1,6 +1,6 @@
 import AdminPanelLayout from "@/components/admin-panel/admin-panel-layout";
 
-export default function Contact({ children }: { children: React.ReactNode }) {
+export default function Contact() {
   return (
     <div className="dark">
         

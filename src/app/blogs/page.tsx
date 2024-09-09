@@ -1,5 +1,5 @@
 
-export default function Blogs({ children }: { children: React.ReactNode }) {
+export default function Blogs() {
   return (
     <div className="dark">
       blog
