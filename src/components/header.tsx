@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Instagram, Linkedin } from "lucide-react";
+import { Github, Instagram, Linkedin } from "lucide-react";
 import Link from "next/link";
 
 export default function Header() {
@@ -23,8 +23,12 @@ export default function Header() {
             <Link
               href={"https://www.instagram.com/ahhay_sood__"}
               target="_blank"
+              className="mr-4"
             >
               <Instagram className="text-[#7F888F] hover:text-[#fff] transition-all" />
+            </Link>
+            <Link href={"https://github.com/humaneBicycle"} target="_blank">
+              <Github className="text-[#7F888F] hover:text-[#fff] transition-all" />
             </Link>
           </div>
         </div>

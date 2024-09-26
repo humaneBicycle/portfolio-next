@@ -64,7 +64,7 @@ export function Sidebar() {
                   : "translate-x-0 opacity-100"
               )}
             >
-              Contact.tsx
+              Contact
             </h1>
             <ul className="flex flex-col min-h-[50vh] items-start space-y-1 px-2 mt-8">
               <li className={cn("w-full")}>
