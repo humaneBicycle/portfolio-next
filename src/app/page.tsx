@@ -1,7 +1,7 @@
 import { ContentLayout } from "@/components/admin-panel/content-layout";
 import Header from "@/components/header";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { CldImage } from "next-cloudinary";
+import Image from "next/image";
 import {config} from "../../config";
 
 
@@ -24,7 +24,7 @@ export default function About() {
               <p className="mt-4 text-[#7F888F]">{config.about.outro}</p>
             </div>
             <div className="flex-1 rounded p-4">
-              <CldImage
+              <Image
                 src="/ME_LINKEDIN.jpeg"
                 width={500}
                 height={500}
