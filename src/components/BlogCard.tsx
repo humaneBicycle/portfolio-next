@@ -3,14 +3,14 @@ import Link from "next/link";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
-import Image from "next/image";
+import { CldImage } from "next-cloudinary";
 
 export default function BlogCard({ blog }: { blog: Blog }) {
   return (
     <Card className="flex-[45%] my-2 mr-2 p-4 max-w-[50%]">
       <div className="flex justify-between">
         <div className="flex-1 text-lg ">
-          <Image
+          <CldImage
             src="/ME_LINKEDIN.jpeg"
             width={0}
             height={0}
