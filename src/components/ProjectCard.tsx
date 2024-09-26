@@ -50,8 +50,8 @@ export default function ProjectCard( {project} : { project: Project }) {
           </div> */}
 
           <div className="flex flex-wrap mb-6">
-            {project.techStack.map((tech) => (
-              <Badge className="mr-1">{tech}</Badge>
+            {project.techStack.map((tech,key) => (
+              <Badge className="mr-1" key={key}>{tech}</Badge>
             ))}
           </div>
           <Link href={project.url} target="_blank">
