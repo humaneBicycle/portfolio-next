@@ -26,8 +26,8 @@ export default function ProjectCard( {project} : { project: Project }) {
           </p>
 
           <ul className="my-8 ml-6 list-disc [&>li]:mt-2">
-            {project.bullets.map((bullet) => (
-              <li className="text-base text-[#7F888F]">{bullet}</li>
+            {project.bullets.map((bullet,key) => (
+              <li className="text-base text-[#7F888F]" key={key}>{bullet}</li>
             ))}
           </ul>
 

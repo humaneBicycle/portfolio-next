@@ -17,8 +17,8 @@ export default function About() {
               <div className="mt-8 mb-4 text-[#7F888F]">Summary</div>
               <p className="mt-4 text-[#7F888F]">{config.about.summary}</p>
               <ul className="my-8 ml-6 list-disc [&>li]:mt-2">
-                {config.about.bullets.map((bullet) => (
-                  <li className="text-base text-[#7F888F]">{bullet}</li>
+                {config.about.bullets.map((bullet,key) => (
+                  <li className="text-base text-[#7F888F]" key={key}>{bullet}</li>
                 ))}
               </ul>
               <p className="mt-4 text-[#7F888F]">{config.about.outro}</p>

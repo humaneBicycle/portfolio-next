@@ -18,8 +18,8 @@ export default function Projects() {
           <hr className="mt-1 mb-12 w-[6%] text-[#7F888F] h-[0px] border-2 border-[#7F888F]"></hr>
         </div>
         <div className="w-[80%] flex flex-wrap">
-          {config.projects.map((project)=>(
-           <ProjectCard project={project} />
+          {config.projects.map((project,key)=>(
+           <ProjectCard project={project} key={key} />
           ))}
         </div>
       </div>

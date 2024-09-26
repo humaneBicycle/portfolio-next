@@ -18,8 +18,8 @@ export default function Projects() {
           <hr className="mt-1 mb-12 w-[4%] text-[#7F888F] h-[0px] border-2 border-[#7F888F]"></hr>
         </div>
         <div className="w-[80%] flex flex-wrap">
-          {config.blogs.map((blog) => (
-            <BlogCard blog={blog} />
+          {config.blogs.map((blog,key) => (
+            <BlogCard blog={blog} key={key}/>
           ))}
         </div>
       </div>
