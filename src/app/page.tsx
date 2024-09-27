@@ -11,7 +11,7 @@ export default function About() {
       <div className="w-full items-center flex flex-col">
         <div className="flex flex-col h-full items-center w-[80%]">
           <Header />
-          <div className="flex justify-between mb-8">
+          <div className="flex justify-between mb-8 flex-col lg:flex-row">
             <div className="flex-1 text-lg pr-4">
               <b>{config.about.intro}</b>
               <div className="mt-8 mb-4 text-[#7F888F]">Summary</div>

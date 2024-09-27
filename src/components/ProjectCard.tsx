@@ -11,7 +11,7 @@ export default function ProjectCard( {project} : { project: Project }) {
       <div className="flex justify-between">
         <div className="flex-1 text-lg ">
           <Image
-            src="/ME_LINKEDIN.jpeg"
+            src={project.image_url}
             width={0}
             height={0}
             alt="proj_img"

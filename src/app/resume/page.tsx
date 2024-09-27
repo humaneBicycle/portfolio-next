@@ -9,7 +9,7 @@ export default function Resume() {
         <Header />
         <div className="h-full w-full">
           <embed
-            src="/resume.pdf"
+            src="/resumes/resume.pdf"
             type="application/pdf"
             width="100%"
             height="100%"

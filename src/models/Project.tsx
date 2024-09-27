@@ -3,26 +3,28 @@ export class Project {
   description: string;
   techStack: string[];
   github: string;
-  url: string;
+  image_url: string;
   bullets: string[];
   testimonials: Testimonial[];
+  url:string;
   constructor(
     name: string,
     description: string,
     techStack: string[],
     github: string,
-    url:string,
+    image_url:string,
     bullets: string[],
-    testimonials: Testimonial[]
-
+    testimonials: Testimonial[],
+    url:string
   ) {
     this.name = name;
     this.description = description;
     this.techStack = techStack;
     this.github = github;
-    this.url=url;
+    this.image_url=image_url;
     this.bullets = bullets;
     this.testimonials = testimonials;
+    this.url = url;
   }
 }
 class Testimonial{
