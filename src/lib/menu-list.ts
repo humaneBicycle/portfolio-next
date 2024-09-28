@@ -58,13 +58,13 @@ export function getMenuList(pathname: string): Group[] {
           icon: File,
           submenus: [],
         },
-        {
-          href: "/blogs",
-          label: "blogs.tsx",
-          active: pathname.includes("/blogs"),
-          icon: Rss,
-          submenus: [],
-        },
+        // {
+        //   href: "/blogs",
+        //   label: "blogs.tsx",
+        //   active: pathname.includes("/blogs"),
+        //   icon: Rss,
+        //   submenus: [],
+        // },
       ],
     },
   ];

@@ -18,7 +18,7 @@ export const config = {
       github: "https://github.com/humaneBicycle/admin-edtech",
       image_url:
         "https://raw.githubusercontent.com/humaneBicycle/admin-edtech/refs/heads/master/image.png",
-      url:"",
+      url: "",
       bullets: [
         "An e-commerce website, escents.in, a freelance project, built using Tailwind, JavaScript, and Liquid templating with a clean, intuitive design.",
         "Achieved monthly sales exceeding 60K INR through a user-friendly and elegant interface.",
@@ -56,16 +56,18 @@ export const config = {
       ],
     },
     {
-      name: "",
+      name: "Distributed Triple Store",
       description:
-        "A Covid-19 tracker that tracks the number of cases, recoveries and deaths in real time.",
+        "A distributed triple store is a distributed systems project that manages and queries data structured as subject-predicate-object triples across multiple servers, ensuring scalability and efficient retrieval of linked data in a decentralized environment.",
       techStack: ["React", "Material UI", "Chart.js", "Leaflet"],
-      github: "",
-      url: "google.com",
-      image_url: "",
+      github: "https://github.com/humaneBicycle/distributed-nosql-store/",
+      url: "https://github.com/humaneBicycle/distributed-nosql-store/",
+      image_url:
+        "https://raw.githubusercontent.com/humaneBicycle/distributed-nosql-store/refs/heads/master/image.png",
       bullets: [
-        "An e-commerce website, escents.in, a freelance project, built using Tailwind, JavaScript, and Liquid templating with a clean, intuitive design.",
-        "Achieved monthly sales exceeding 60K INR through a user-friendly and elegant interface.",
+        "Designed and implemented a distributed NoSQL Database prototype integrating 3 database systems (PostgreSQL, MongoDB, Neo4j), using Python and state-based objects, for efficient storage and querying",
+        "Developed a log-based merging mechanism for maintaining data consistency across 3 servers",
+        "Used Yago dataset with more than 13 million data points for testing",
       ],
       testimonials: [
         {
@@ -74,7 +76,6 @@ export const config = {
         },
       ],
     },
-    
   ],
   blogs: [
     {
